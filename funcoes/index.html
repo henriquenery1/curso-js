@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script src="script.js"></script>
+    <script>
+        function imc (peso, altura) {
+    var imc = peso / (altura * altura);
+    return imc;
+}
+   
+console.log(imc(80, 1.80));
+
+function dados () {
+    var nome = 'André';
+    var idade = 28;
+    function outrosDados () {
+        var endereço = 'RJ';
+        var idade = 30;
+        return `${nome}, ${idade}, ${endereço}`;
+    }
+    return outrosDados ();
+}
+console.log(dados());
+
+    </script>
+
+    <h1>Funções</h1>
+    <p>
+        abra o console.
+    </p>
+    
+</body>
+</html>
